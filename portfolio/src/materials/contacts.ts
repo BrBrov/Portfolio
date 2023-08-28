@@ -9,19 +9,19 @@ const about: string = 'I am considering a change of\n' +
   'into practice.\n';
 
 const contacts: Array<string> = [
+  'Belarus, Postavy',
   '+375-29-714-94-64',
   'borbrov@gmail.com',
-  'Belarus, Postavy',
   'https://www.linkedin.com/in/brbrov',
   'https://github.com/BrBrov'
 ];
 
 const links: Array<string> = [
-  '../assets/address.png',
-  '../assets/linkedin.png',
-  '../assets/git.png',
-  '../assets/mail.png',
-  '../assets/phone.png'
+  './src/assets/address.svg',
+  './src/assets/phone.svg',
+  './src/assets/mail.svg',
+  './src/assets/linkedin.svg',
+  './src/assets/git.svg'
 ];
 
 const photo: string = './src/assets/photo.jpg';

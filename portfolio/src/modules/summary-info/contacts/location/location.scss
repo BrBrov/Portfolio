@@ -1,0 +1,28 @@
+.location {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 15%;
+}
+
+.location__icon-wrapper {
+  width: 35px;
+  height: 57px;
+}
+
+.location__icon {
+  width: 100%;
+  height: 100%;
+}
+
+.location__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location__info {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
