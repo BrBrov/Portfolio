@@ -1,12 +1,8 @@
 import {Component} from 'react';
 import './location.scss';
+import ContactData from '../../../../models/contact-model.ts';
 
-interface LocationData {
-  linkUrl: string;
-  contact: string;
-}
-
-export default class Location extends Component<LocationData> {
+export default class Location extends Component<ContactData> {
   render() {
     return (
       <>

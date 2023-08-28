@@ -2,23 +2,30 @@ $text-color: #FFFFFF;
 
 .contacts {
   display: flex;
-  width: 85%;
+  width: 91%;
   padding-top: 45px;
   align-self: center;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 
 .contacts__about,
 .contacts__links {
   display: flex;
-  width: 80%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 16px;
+  gap: 15px;
+}
+
+.contacts__about {
+  width: 76%;
+}
+
+.contacts__links {
+  width: 85%;
 }
 
 .contacts__title-about,
