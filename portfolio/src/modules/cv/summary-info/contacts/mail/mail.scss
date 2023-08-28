@@ -1,0 +1,22 @@
+@use '../mixins.scss' as mixins;
+
+.mail {
+  @include mixins.main-wrapper;
+}
+
+.mail__icon-wrapper {
+  @include mixins.icon-wrapper;
+}
+
+.mail__icon {
+  width: 58px;
+  height: 42px;
+}
+
+.mail__info-wrapper {
+  @include mixins.info-wrapper;
+}
+
+.mail__info {
+  @include mixins.info;
+}
