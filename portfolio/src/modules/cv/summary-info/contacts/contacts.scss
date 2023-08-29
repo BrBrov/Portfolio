@@ -1,3 +1,5 @@
+@use '../../../../fonts/fonts.scss' as fonts;
+
 $text-color: #FFFFFF;
 
 .contacts {
@@ -30,13 +32,15 @@ $text-color: #FFFFFF;
 
 .contacts__title-about,
 .contacts__title-links {
-  font-size: 2.2em;
+  @include fonts.DMSans;
+  font-size: 2.2rem;
   color: $text-color;
 }
 
 .contacts__text-about {
+  @include fonts.DMSans;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.2rem;
   color: $text-color;
 }
 
