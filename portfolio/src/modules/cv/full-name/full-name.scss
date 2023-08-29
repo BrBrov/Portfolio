@@ -1,0 +1,17 @@
+@use '../../../fonts/fonts.scss' as font;
+
+.full-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.full-name__name,
+.full-name__surname {
+  @include font.Now-Bold;
+  font-size: 6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
