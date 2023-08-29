@@ -1,4 +1,5 @@
 @use '../mixins.scss' as mixins;
+@use '../../../../../fonts/fonts.scss' as font;
 
 .location {
   @include mixins.main-wrapper;
@@ -18,5 +19,6 @@
 }
 
 .location__info {
+  @include font.DMSans;
   @include mixins.info;
 }
