@@ -1,0 +1,15 @@
+@use '../../../../fonts/fonts.scss' as font;
+
+.certificate__item {
+  width: 100%;
+}
+
+.certificate__link {
+  @include font.DMSans;
+  font-size: 1.8rem;
+  color: #161415;
+}
+
+.certificate__item::marker {
+  color: #161415;
+}
