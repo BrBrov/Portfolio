@@ -5,6 +5,7 @@ import summary from '../../materials/contacts.ts';
 import Certificates from './certificates/certificates.tsx';
 import FullName from './full-name/full-name.tsx';
 import Experience from './experience/experience.tsx';
+import Education from './education/education.tsx';
 
 export  default class CV extends Component {
   public render() {
@@ -13,9 +14,10 @@ export  default class CV extends Component {
         <div className='cv'>
           <div className='cv__wrapper'>
             <Summary { ...summary } />
-            < Certificates />
-            <FullName />
-            <Experience />
+            <Certificates/>
+            <FullName/>
+            <Experience/>
+            <Education/>
           </div>
         </div>
       </>
