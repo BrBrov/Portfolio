@@ -1,5 +1,5 @@
 import {Component} from 'react';
-import certificates from '../../../materials/certificates.tsx';
+import certificates from '../../../materials/certificates.ts';
 import Certificate from './certificate/certificate.tsx';
 import CertData from '../../../models/cert-model.ts';
 import './certificates.scss';
