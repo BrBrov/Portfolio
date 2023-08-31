@@ -22,4 +22,8 @@
                        'summary education'
                        'certificates skills';
   column-gap: 22px;
+
+  @media screen and (max-width: 1367px) {
+    margin: 0 auto 160px;
+  }
 }

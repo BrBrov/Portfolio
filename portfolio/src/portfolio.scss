@@ -1,9 +1,15 @@
 .portfolio {
   position: relative;
   max-width: 1414px;
-  height: 2000px;
+  min-height: 2000px;
   margin: 40px auto 40px;
   box-shadow: 3px -3px 10px #161415;
+
+  @media screen and (max-width: 1414px) {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: none;
+  }
 }
 
 a {
@@ -11,7 +17,7 @@ a {
 }
 
 a:hover {
-  color: #047767;
+  color: #045877;
 }
 
 a:active {
