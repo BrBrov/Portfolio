@@ -28,6 +28,10 @@ $text-color: #FFFFFF;
 
 .contacts__links {
   width: 85%;
+
+  @media screen and (max-width: 1310px) {
+    width: 98%;
+  }
 }
 
 .contacts__title-about,

@@ -24,4 +24,10 @@
   text-align: center;
   color: #FFFFFF;
   font-size: 2rem;
+
+  @media screen and (max-width: 1000px) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.4rem;
+  }
 }

@@ -9,6 +9,14 @@
 
   @media screen and (max-width: 1370px) {
     gap: 15px;
+
+    @media screen and (max-width: 1136px) {
+      gap: 10px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      gap: 3px;
+    }
   }
 }
 
@@ -18,12 +26,20 @@
   font-size: 1.6rem;
   font-weight: 700;
   color: #161415;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 1.4rem;
+  }
 }
 
 .experience__record-description {
   align-self: flex-start;
   @include font.DMSans;
-  font-size: 1.4rem;
-  font-weight: 200;
+  font-size: 1.2rem;
+  font-weight: 300;
   color: #161415;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 1rem;
+  }
 }

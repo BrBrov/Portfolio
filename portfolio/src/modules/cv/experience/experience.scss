@@ -3,10 +3,14 @@
   grid-area: expirience;
   display: flex;
   width: 100%;
-  height: 780px;
+  height: 760px;
   margin-top: 30px;
   flex-direction: column;
   gap: 15px;
+  
+  @media screen and (max-width: 1136px) {
+    gap: 10px;
+  }
 }
 
 .experience__header-wrapper {
@@ -50,5 +54,9 @@
   
   @media screen and (max-width: 1370px) {
     gap: 15px;
+
+    @media screen and (max-width: 1136px) {
+      gap: 10px;
+    }
   }
 }

@@ -5,6 +5,11 @@
   flex-direction: column;
   justify-content: flex-start;
   background: #161415;
+
+  @media screen and (max-width: 960px) {
+    height: 1228px;
+    min-height: auto;
+  }
 }
 
 .summary__photo {
@@ -13,6 +18,16 @@
   width: 435px;
   height: 435px;
   margin-top: 90px;
+
+  @media screen and (max-width: 1289px) {
+    width: 340px;
+    height: 340px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 280px;
+    height: 280px;
+  }
 }
 
 .summary__image {
