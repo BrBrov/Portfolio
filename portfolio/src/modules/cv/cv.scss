@@ -39,7 +39,7 @@
   }
 
   @media screen and (max-width: 960px) {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     grid-template-columns: 100%;
     grid-template-rows: 230px 1270px 330px 710px 300px 350px;
@@ -49,5 +49,9 @@
                            'expirience'
                            'certificates'
                            'skills';
+
+    @media screen and (max-width: 559px) {
+      width: 100%;
+    }
   }
 }

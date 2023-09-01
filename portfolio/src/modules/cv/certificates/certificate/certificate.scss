@@ -8,6 +8,22 @@
   @include font.DMSans;
   font-size: 1.8rem;
   color: #161415;
+
+  @media screen and (max-width: 1246px) {
+    font-size: 1.6rem;
+  }
+
+  @media screen and (max-width: 1108px) {
+    font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: 975px) and (min-width: 961px){
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 960px) {
+    font-size: 1.6rem;
+  }
 }
 
 .certificate__item::marker {

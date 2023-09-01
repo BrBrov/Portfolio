@@ -19,7 +19,11 @@
   text-transform: uppercase;
   color: #FFFFFF;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1139px) {
+    font-size: 5rem;
+  }
+
+  @media screen and (max-width: 559px) {
     font-size: 4rem;
   }
 }

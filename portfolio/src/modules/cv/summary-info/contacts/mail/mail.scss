@@ -12,6 +12,11 @@
 .mail__icon {
   width: 58px;
   height: 42px;
+
+  @media screen and (max-width: 1139px) {
+    width: 48px;
+    height: 22px;
+  }
 }
 
 .mail__info-wrapper {

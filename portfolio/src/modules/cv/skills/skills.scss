@@ -35,4 +35,11 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 20px;
+
+  @media screen and (max-width: 559px) {
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
 }

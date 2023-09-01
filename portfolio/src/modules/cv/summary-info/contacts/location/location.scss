@@ -12,6 +12,11 @@
 .location__icon {
   width: 59px;
   height: 50px;
+
+  @media screen and (max-width: 1139px) {
+    width: 39px;
+    height: 30px;
+  }
 }
 
 .location__info-wrapper {
