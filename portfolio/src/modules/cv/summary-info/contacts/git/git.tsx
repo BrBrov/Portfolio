@@ -11,7 +11,7 @@ export default class Git extends Component<ContactData> {
             <img className='git__icon' srcSet={ this.props.linkUrl } alt='Git'/>
           </div>
           <div className='git__info-wrapper'>
-            <a className='git__info' href={ `tel:${this.props.contact}` }>{ this.props.contact }</a>
+            <a className='git__info' href={ this.props.contact }>Git Hub</a>
           </div>
         </div>
       </>

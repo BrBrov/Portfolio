@@ -11,7 +11,7 @@ export default class LinkedIn extends Component<ContactData> {
             <img className='linkedIn__icon' srcSet={ this.props.linkUrl } alt='LinkedIn'/>
           </div>
           <div className='linkedIn__info-wrapper'>
-            <a className='linkedIn__info' href={ this.props.contact }>{ this.props.contact }</a>
+            <a className='linkedIn__info' href={ this.props.contact }>LinkedIn</a>
           </div>
         </div>
       </>
