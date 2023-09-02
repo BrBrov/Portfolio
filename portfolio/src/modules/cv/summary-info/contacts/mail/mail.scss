@@ -1,5 +1,5 @@
 @use '../mixins' as mixins;
-@use '../../../../../fonts/fonts.scss' as font;
+@use '../../../../../assets/fonts/fonts.scss' as font;
 
 .mail {
   @include mixins.main-wrapper;
