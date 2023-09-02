@@ -1,5 +1,6 @@
 import {Component} from 'react';
 import './location.scss';
+import '../../../../../assets/address.svg';
 import ContactData from '../../../../../models/contact-model.ts';
 
 export default class Location extends Component<ContactData> {

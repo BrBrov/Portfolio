@@ -3,6 +3,7 @@ import './summary-info.scss';
 import SummaryInfo from '../../../models/summary-models.ts';
 import Contacts from './contacts/contacts.tsx';
 import summary from '../../../materials/contacts.ts';
+import '../../../assets/photo.jpg';
 
 export default class Summary extends Component<SummaryInfo> {
 

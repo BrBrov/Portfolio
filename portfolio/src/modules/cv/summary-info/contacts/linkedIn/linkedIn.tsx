@@ -1,6 +1,7 @@
 import {Component} from 'react';
 import ContactData from '../../../../../models/contact-model.ts';
 import './linkedIn.scss';
+import '../../../../../assets/linkedin.svg';
 
 export default class LinkedIn extends Component<ContactData> {
   render() {

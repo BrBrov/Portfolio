@@ -1,6 +1,7 @@
 import {Component} from 'react';
 import ContactData from '../../../../../models/contact-model.ts';
 import './git.scss';
+import '../../../../../assets/git.svg';
 
 export default class Git extends Component<ContactData> {
   render() {

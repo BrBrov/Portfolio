@@ -1,6 +1,7 @@
 import {Component} from 'react';
 import ContactData from '../../../../../models/contact-model.ts';
 import './mail.scss';
+import '../../../../../assets/mail.svg';
 
 export default class Mail extends Component<ContactData> {
   render() {

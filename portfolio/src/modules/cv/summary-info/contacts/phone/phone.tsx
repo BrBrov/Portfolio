@@ -1,6 +1,7 @@
 import {Component} from 'react';
 import ContactData from '../../../../../models/contact-model.ts';
 import './phone.scss';
+import '../../../../../assets/photo.jpg';
 
 export default class Phone extends Component<ContactData> {
   render() {
