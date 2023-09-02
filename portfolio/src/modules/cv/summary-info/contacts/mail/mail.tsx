@@ -1,7 +1,7 @@
 import {Component} from 'react';
 import ContactData from '../../../../../models/contact-model.ts';
 import './mail.scss';
-import '../../../../../assets/mail.svg';
+import mail from '../../../../../assets/mail.svg';
 
 export default class Mail extends Component<ContactData> {
   render() {
@@ -9,7 +9,7 @@ export default class Mail extends Component<ContactData> {
       <>
         <div className='mail'>
           <div className='mail__icon-wrapper'>
-            <img className='mail__icon' srcSet={ this.props.linkUrl } alt='Mail'/>
+            <img className='mail__icon' srcSet={ mail } alt='Mail'/>
           </div>
           <div className='mail__info-wrapper'>
             <a className='mail__info' href={ `mailto:${this.props.contact}` }>{ this.props.contact }</a>

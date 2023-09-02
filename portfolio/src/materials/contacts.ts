@@ -16,21 +16,9 @@ const contacts: Array<string> = [
   'https://github.com/BrBrov'
 ];
 
-const links: Array<string> = [
-  './src/assets/address.svg',
-  './src/assets/phone.svg',
-  './src/assets/mail.svg',
-  './src/assets/linkedin.svg',
-  './src/assets/git.svg'
-];
-
-const photo: string = './src/assets/photo.jpg';
-
 const summary: SummaryInfo = {
   about: about,
-  contacts: contacts,
-  links: links,
-  photo: photo
+  contacts: contacts
 }
 
 export default summary;

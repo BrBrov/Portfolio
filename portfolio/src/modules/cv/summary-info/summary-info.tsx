@@ -3,7 +3,7 @@ import './summary-info.scss';
 import SummaryInfo from '../../../models/summary-models.ts';
 import Contacts from './contacts/contacts.tsx';
 import summary from '../../../materials/contacts.ts';
-import '../../../assets/photo.jpg';
+import photo from '../../../assets/photo.jpg';
 
 export default class Summary extends Component<SummaryInfo> {
 
@@ -12,7 +12,7 @@ export default class Summary extends Component<SummaryInfo> {
       <>
         <div className='summary__info'>
           <div className='summary__photo'>
-            <img className='summary__image' srcSet={ this.props.photo } alt='Author photo'/>
+            <img className='summary__image' srcSet={ photo } alt='Author photo'/>
           </div>
           < Contacts { ...summary }/>
         </div>
