@@ -1,5 +1,5 @@
 import {Component} from 'react';
-import SummaryInfo from '../../../models/summary-models.ts';
+import SummaryInfo from '../../../../models/summary-models.ts';
 import './contacts.scss';
 import Location from './location/location.tsx';
 import Phone from './phone/phone.tsx';
