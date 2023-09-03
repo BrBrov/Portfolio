@@ -8,6 +8,10 @@ $element-width: 100%;
   @media screen and (max-width: 960px) {
     height: 3200px;
   }
+
+  @media screen and (max-width: 499px) {
+    height: 3512px;
+  }
 }
 
 .bground__top {
@@ -23,5 +27,9 @@ $element-width: 100%;
 
   @media screen and (max-width: 960px) {
     height: 2983px;
+  }
+
+  @media screen and (max-width: 499px) {
+    height: 3162px;
   }
 }

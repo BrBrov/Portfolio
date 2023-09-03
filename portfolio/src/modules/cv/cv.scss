@@ -12,6 +12,10 @@
   @media screen and (max-width: 960px) {
     margin-top: -3200px;
   }
+
+  @media screen and (max-width: 499px) {
+    margin-top: -3538px;
+  }
 }
 
 .cv__wrapper {
@@ -52,6 +56,10 @@
 
     @media screen and (max-width: 559px) {
       width: 100%;
+
+      @media screen and (max-width: 499px) {
+        grid-template-rows: 230px 1270px 430px 910px 300px 350px;
+      }
     }
   }
 }

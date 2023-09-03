@@ -24,6 +24,10 @@
   @media screen and (max-width: 960px) {
     font-size: 1.6rem;
   }
+
+  @media screen and (max-width: 429px) {
+    font-size: 1.3rem;
+  }
 }
 
 .certificate__item::marker {

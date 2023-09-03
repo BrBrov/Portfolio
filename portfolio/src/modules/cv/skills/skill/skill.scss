@@ -13,6 +13,14 @@
   font-size: 1.8rem;
   font-weight: 300;
   color: #161415;
+
+  @media screen and (max-width: 429px) {
+    font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: 399px) {
+    font-size: 1.1rem;
+  }
 }
 
 .skill__value-wrapper {
@@ -43,4 +51,12 @@
   font-size: 2rem;
   font-weight: 700;
   color: #1f3a68;
+
+  @media screen and (max-width: 429px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 399px) {
+    font-size: 1.3rem;
+  }
 }
