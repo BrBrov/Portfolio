@@ -1,5 +1,5 @@
 @use '../mixins' as mixins;
-@use '../../../../../assets/fonts/fonts.scss' as font;
+@use '../../../../../fonts/fonts.scss' as font;
 
 .phone {
   @include mixins.main-wrapper;
@@ -24,6 +24,7 @@
 }
 
 .phone__info {
-  @include font.DMSans;
+  //@include font.DMSans;
   @include mixins.info;
+  @include font.DMSans;
 }
