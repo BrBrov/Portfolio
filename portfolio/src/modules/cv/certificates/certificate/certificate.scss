@@ -6,7 +6,9 @@
 
 .certificate__link {
   @include font.DMSans;
+  text-decoration: underline;
   font-size: 1.8rem;
+  font-weight: bold;
   color: #161415;
 
   @media screen and (max-width: 1246px) {
