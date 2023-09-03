@@ -9,7 +9,7 @@ function Portfolio() {
       < Bground />
       < CV />
     </>
-  )
+  );
 }
 
-export default Portfolio
+export default Portfolio;

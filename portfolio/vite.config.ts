@@ -8,4 +8,4 @@ export default defineConfig({
     port: 4000
   },
   publicDir: './src/fonts',
-})
+});

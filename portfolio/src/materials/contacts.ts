@@ -19,6 +19,6 @@ const contacts: Array<string> = [
 const summary: SummaryInfo = {
   about: about,
   contacts: contacts
-}
+};
 
 export default summary;

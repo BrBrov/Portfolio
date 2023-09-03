@@ -1,3 +1,5 @@
-export default interface ContactData {
+interface ContactData {
   contact: string;
 }
+
+export default ContactData;

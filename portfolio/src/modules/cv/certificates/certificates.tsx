@@ -7,7 +7,7 @@ import './certificates.scss';
 export default class Certificates extends Component {
   render() {
     const certificatesElems = certificates.map((cert: CertData, id: number) => (
-        <Certificate {...cert } key = { id }/>
+      <Certificate {...cert} key={id}/>
     ));
 
     return (
@@ -18,7 +18,7 @@ export default class Certificates extends Component {
           </div>
           <div className='certificates__list-wrapper'>
             <ul className='certificates__list'>
-              { certificatesElems }
+              {certificatesElems}
             </ul>
           </div>
         </div>

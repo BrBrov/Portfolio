@@ -1,4 +1,6 @@
-export default interface EducationData {
+interface EducationData {
   institution: string;
   period: string;
 }
+
+export default EducationData;

@@ -8,12 +8,24 @@ module.exports = {
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh'],
+  'parserOptions': {
+    'ecmaVersion': 'latest',
+    'sourceType': 'module',
+    'warnOnUnsupportedTypeScriptVersion': false,
+    'ecmaFeatures': {
+      'jsx': true
+    },
+    'createDefaultProgram': true
+  },
+  'plugins': [
+    'react'
+  ],
+  'settings': {
+    'react': {
+      'version': 'detect'
+    }
+  },
   rules: {
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
     'react/react-in-jsx-scope': 'off',
     'indent': [
       'error',
@@ -26,6 +38,7 @@ module.exports = {
     'semi': [
       'error',
       'always'
-    ]
+    ],
+    "@typescript-eslint/semi": "off"
   },
 }

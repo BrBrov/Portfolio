@@ -10,7 +10,7 @@ const preSchool: ExperienceData = {
                ' to receive data from third-party services (Flickr, OpenWeatherMap API),' +
                ' creating interactive elements (adaptive carousel, music player,' +
                ' animation using the Web Animation API).'
-}
+};
 
 const school: ExperienceData = {
   name: 'JS/FE Pre-School 2022Q2',
@@ -19,7 +19,7 @@ const school: ExperienceData = {
                'In a team project, he was a team leader, developed a ' +
                'Backend on Express and a MongoDB database. The final ' +
                'project was written in classes using Typescript, SCSS.'
-}
+};
 
 const angular: ExperienceData = {
   name: 'Angular 2023Q1',
@@ -27,6 +27,6 @@ const angular: ExperienceData = {
                'I created application components, added services for interactivity ' +
                'of components, changed the state of NgRx using Action, added logic ' +
                'to the Reducer to display State.'
-}
+};
 
 export const experience: Array<ExperienceData> = [preSchool, school, angular];
