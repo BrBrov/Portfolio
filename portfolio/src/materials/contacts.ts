@@ -1,12 +1,11 @@
 import SummaryInfo from '../models/summary-models.ts';
 
-const about: string = 'I am considering a change of\n' +
-  'profession towards frontend\n' +
-  'development. I have completed\n' +
-  'online courses in HTML / CSS / JS /\n' +
-  'Angular and am looking for an\n' +
-  'opportunity to put my knowledge\n' +
-  'into practice.\n';
+const about: string = 'I have taken online courses' +
+                      ' in HTML/CSS/JS/Angular and' +
+                      ' am looking for an opportunity' + 
+                      ' to put my knowledge into practice' +
+                      ' as a Junior Frontend Developer.' +
+                      ' I hope for long-term cooperation.'
 
 const contacts: Array<string> = [
   'Belarus, Postavy',
