@@ -6,7 +6,7 @@ function Portfolio() {
   return (
     <>
       <Analytics debug = { false }/>
-      <span>Portfolio</span>
+      <span>Here will my portfolio</span>
     </>
   );
 }

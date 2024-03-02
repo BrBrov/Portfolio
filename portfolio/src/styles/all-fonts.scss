@@ -1,0 +1,77 @@
+@import './fonts.scss';
+@import './colors.scss';
+
+@mixin garet {
+  font-family: nth($all-fonts, 1 ), sans-serif;
+}
+
+@mixin garetBold {
+  font-family: nth($all-fonts, 2), sans-serif;
+}
+
+@mixin openSans {
+  font-family: nth($all-fonts, 3), sans-serif;
+}
+
+
+$font-sizes: (49px, 42px, 16px, 14px, 12px, 10.5px, 10px, 9px, 8px);
+
+@mixin nameFont($name) {
+
+  @if($name == 'name') {
+    @extend garetBold;
+    font-size: nth($font-sizes, 1 );
+    color: map-get($colors, 'name' );
+  }
+
+  @if($name == 'surname') {
+    @extend garet;
+    font-size: nth($font-sizes, 2);
+    color: map-get($colors, 'name' );
+  }
+
+  @if($name == 'prof') {
+    @extend garet;
+    font-size: nth($font-sizes, 3);
+    color: map-get($colors, 'prof' );
+  }
+
+}
+
+@mixin titleText ($ligth){
+  @extend garetBold;
+  font-size: nth($font-sizes, 4);
+  color: map-get($colors, $ligth);
+}
+
+@mixin contactsText {
+  @extend openSans;
+  font-size: nth($font-sizes, 6);
+  color: map-get($colors, 'white');
+}
+
+@mixin textGeneral ($size) {
+  @extend openSans;
+
+  @if($size == 'biggest') {
+    font-size: nth($font-sizes, 5);
+  }
+
+  @if($size == 'big') {
+    font-size: nth($font-sizes, 7);
+  }
+
+  @if($size == 'medium') {
+    font-size: nth($font-sizes, 8);
+  }
+
+  @if($size == 'small') {
+    font-size: nth($font-sizes, 9);
+  }
+}
+
+@mixin skillText {
+  @extend openSans;
+  font-size: nth($font-sizes, 7);
+  color: map-get($colors, 'white');
+}
