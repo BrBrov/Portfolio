@@ -5,4 +5,5 @@ export interface Expertise {
 
 export interface MyExpertise {
   kind: Array<Expertise>;
+  title: (lang: string) => string;
 }
