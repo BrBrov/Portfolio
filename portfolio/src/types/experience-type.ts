@@ -7,6 +7,6 @@ export interface Experience {
 export interface MyExperience {
   en: Array<Experience>;
   ru: Array<Experience>;
-  organization: String;
+  organization: string;
   title: (lang: string) => string;  
 }
