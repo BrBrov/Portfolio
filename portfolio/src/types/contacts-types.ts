@@ -1,7 +1,9 @@
+import GetTitle from './getTitle-type';
+
 export interface ContactsRecord {
   info: Array<string>;
   title: ContactsTitle;
-  getTitle: (lang: string) => string;
+  getTitle: GetTitle;
 }
 
 export interface ContactsTitle {
@@ -11,5 +13,5 @@ export interface ContactsTitle {
 
 export interface MyContacts {
   contacts: Array<ContactsRecord>;
-  title: (lang: string) => string;
+  title: GetTitle;
 }
