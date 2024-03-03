@@ -1,0 +1,65 @@
+@import '../../styles/colors.scss';
+
+$background: map-get($colors, 'blue');
+
+.language {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  padding: 2px;
+  justify-content: flex-end;
+
+  &__wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    margin-right: 10px;
+  }
+
+  &__slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $background;
+    -webkit-transition: .4s;
+    transition: .4s;
+    cursor: pointer;
+  }
+
+  &__slider::before {
+    position: absolute;
+    content: '';
+    height: 28px;
+    width: 50px;
+    left: 4px;
+    bottom: 4px;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assets/en.svg') center/cover no-repeat;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  &__toggle {
+    display: none;
+  }
+
+  &__toggle:checked + &__slider {
+    background-color: $background;
+  }
+  
+  &__toggle:focus + &__slider {
+    box-shadow: 0 0 1px $background;
+  }
+  
+  &__toggle:checked + &__slider:before {
+    background: url('../../assets/ru.svg') center/cover no-repeat;
+    -webkit-transform: translateX(46px);
+    -ms-transform: translateX(46px);
+    transform: translateX(46px);
+  }
+}

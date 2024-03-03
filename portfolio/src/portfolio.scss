@@ -1,9 +1,12 @@
+@import './styles/colors.scss';
+
 .portfolio {
   position: relative;
   max-width: 1414px;
   min-height: 2000px;
   margin: 40px auto 40px;
   box-shadow: 3px -3px 10px #161415;
+  background-color: map-get($colors, 'white');
 }
 
 a {

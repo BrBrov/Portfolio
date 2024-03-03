@@ -1,11 +1,12 @@
 import { Analytics } from '@vercel/analytics/react';
 import './portfolio.scss';
+import Header from './layouts/Header/header';
 
 function Portfolio() {
   return (
     <>
       <Analytics debug = { false }/>
-      <span>Here will my portfolio</span>
+      <Header/>
     </>
   );
 }
