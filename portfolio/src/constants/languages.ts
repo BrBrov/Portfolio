@@ -10,7 +10,7 @@ const russian: LangSkills = {
 };
 
 const belarus: LangSkills = {
-  level: '100',
+  level: '90',
   title: function (lang: string): string {
     if (lang === 'ru') return 'Белорусский';
 
@@ -19,7 +19,7 @@ const belarus: LangSkills = {
 };
 
 const english: LangSkills = {
-  level: '100',
+  level: '30',
   title: function (lang: string): string {
     if (lang === 'ru') return 'Английский';
 
