@@ -11,13 +11,14 @@
   &__img {
     display: flex;
     width: 494px;
-    height: 494px;
+    height: 465px;
     justify-content: center;
     align-items: center;
   }
 
   &__image {
     width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 
