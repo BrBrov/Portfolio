@@ -6,6 +6,7 @@ import checkLanguage from './utils/checkLanguage';
 import setLanguage from './utils/setLanguage';
 import ContextApp from './context/context';
 import context from './context/context-init';
+import Main from './layouts/Main/main';
 
 
 function Portfolio() {
@@ -32,6 +33,7 @@ function Portfolio() {
       <Analytics debug = { false }/>
       <ContextApp.Provider value={contextInit()}>
         <Header setLangHeader={setLang}/>
+        <Main/>
       </ContextApp.Provider>
     </>
   );

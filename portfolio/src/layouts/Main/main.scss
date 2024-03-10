@@ -1,0 +1,41 @@
+@import '../../styles/colors.scss';
+
+.main {
+  display: flex;
+  width: 100%;
+  min-height: 1535px;
+  flex-direction: row;
+
+  &__aside{
+    display: flex;
+    // box-sizing: border-box;
+    width: 35%;
+    // padding: 85px 0 0 80px;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: map-get($colors, 'panel');
+  }
+
+  &__left-apnel {
+    display: flex;
+    width: 83.81%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__section {
+    display: flex;
+    width: 65%;
+    flex-direction: row;
+    justify-content: center;
+    background-color: map-get($colors, 'white');
+  }
+
+  &__rigth-panel {
+    display: flex;
+    width: 80.43%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

@@ -10,7 +10,7 @@
   
   &__img {
     display: flex;
-    width: 494px;
+    width: 35%;
     height: 465px;
     justify-content: center;
     align-items: center;
@@ -25,6 +25,7 @@
   &__wrapper {
     display: flex;
     box-sizing: border-box;
+    width: 65%;
     padding-left: 9.78%;
     flex-grow: 1;
     flex-direction: column;
