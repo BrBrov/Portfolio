@@ -1,32 +1,24 @@
-import { ReactElement, useContext, useEffect, useState } from 'react';
+import { ReactElement, useState } from 'react';
 import './language-toggle.scss';
-import checkLanguage from '../../utils/checkLanguage';
+import { LanguageToggleProps } from '../../types/langugage-toggle';
 import setLanguage from '../../utils/setLanguage';
-import ContextApp from '../../context/context';
-import { ContextType } from '../../types/context-type';
+import checkLanguage from '../../utils/checkLanguage';
 
-function LanguageToggle(): ReactElement {
-  const [isEn, setLang] = useState<boolean>(false);
-  const context = useContext<ContextType>(ContextApp);
+function LanguageToggle({
+  setLangHeader
+}: LanguageToggleProps): ReactElement {
+  const [isEn, setLang] = useState<boolean>((): boolean => {
+    let lang = checkLanguage();
+
+    if (!lang) lang = 'en';
+    return lang === 'en' ? false : true;
+  });
 
   function onCheck(): void {
-    setLanguage( isEn ? 'en' : 'ru');
-    setLang((state) => !state);
+    setLang(isEn ? false : true);
+    setLangHeader(isEn ? 'en': 'ru');
+    setLanguage(isEn ? 'en': 'ru');
   }
-
-  useEffect(() => {
-    const lang = checkLanguage();
-
-    if (!lang) {
-      setLanguage('en');
-    }
-
-    if (lang && lang !== context.language) {
-      context.language = lang;
-      setLang(lang === 'en' ? false : true);
-    }
-
-  }, [context, isEn]);
 
   return (
     <div className='language'>

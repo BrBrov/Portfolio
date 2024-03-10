@@ -1,0 +1,48 @@
+@import '../../styles/all-fonts.scss';
+@import '../../styles/colors.scss';
+
+.introdution {
+  display: flex;
+  width: 100%;
+  min-height: 465px;
+  flex-direction: row;
+  background-color: map-get($colors, 'title');
+  
+  &__img {
+    display: flex;
+    width: 494px;
+    height: 494px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__wrapper {
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 9.78%;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 44px;
+  }
+
+  &__name {
+    display: inline;
+    margin: 120px 0 0 0;
+    @include nameFont('name');
+  }
+
+  &__surname {
+    @include nameFont('surname');
+  }
+
+  &__prof {
+    @include nameFont('prof');
+  }
+}

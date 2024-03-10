@@ -1,18 +1,21 @@
 @import '../../styles/colors.scss';
 
-$background: map-get($colors, 'blue');
+$background: map-get($colors, 'prof');
 
 .language {
   position: relative;
   display: flex;
+  box-sizing: border-box;
   width: 100%;
   height: 40px;
   padding: 2px;
   justify-content: flex-end;
+  background-color: map-get($colors, 'title' );
 
   &__wrapper {
     position: relative;
     display: inline-block;
+    box-sizing: border-box;
     width: 100px;
     height: 36px;
     margin-right: 10px;
