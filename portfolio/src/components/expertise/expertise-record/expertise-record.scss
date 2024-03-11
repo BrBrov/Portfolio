@@ -1,0 +1,29 @@
+@import '../../../styles/all-fonts.scss';
+@import '../../../styles/colors.scss';
+
+.exp {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  &__name {
+    @include contactText;
+  }
+
+  &__level {
+    margin-right: 44px;
+  }
+
+  &__range {
+    height: 12px;
+    border-radius: 0;
+  }
+
+  &__range::-webkit-progress-bar {
+    background-color: map-get($colors, 'white');
+  }
+
+  &__range::-webkit-progress-value {
+    background-color: map-get($colors, 'blue');
+  }
+}

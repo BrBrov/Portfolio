@@ -1,0 +1,27 @@
+@import '../../styles/all-fonts.scss';
+@import '../../styles/separators.scss';
+
+.expertise {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 70px;
+  flex-direction: column;
+
+  &__title {
+    @include titleText('gray');
+  }
+
+  &__separator {
+    @include separator('white');
+  }
+
+  &__wrapper {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
