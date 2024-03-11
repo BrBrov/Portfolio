@@ -1,4 +1,4 @@
-@import './fonts.scss';
+@import '../fonts/fonts.scss';
 @import './colors.scss';
 
 @mixin garet {
@@ -14,13 +14,14 @@
 }
 
 
-$font-sizes: (95px, 70px, 25px, 14px, 12px, 10.5px, 10px, 9px, 8px);
+$font-sizes: (95px, 70px, 25px, 32px, 12px, 22px, 10px, 9px, 8px);
 
 @mixin nameFont($name) {
 
   @if($name == 'name') {
-    @include garetBold;
+    @include garet();
     font-size: nth($font-sizes, 1 );
+    font-weight: 600;
     color: map-get($colors, 'name' );
     letter-spacing: 17px;
   }
@@ -42,12 +43,13 @@ $font-sizes: (95px, 70px, 25px, 14px, 12px, 10.5px, 10px, 9px, 8px);
 }
 
 @mixin titleText ($ligth){
-  @include garetBold;
+  @include garet;
   font-size: nth($font-sizes, 4);
+  font-weight: 600;
   color: map-get($colors, $ligth);
 }
 
-@mixin contactsText {
+@mixin contactText {
   @include openSans;
   font-size: nth($font-sizes, 6);
   color: map-get($colors, 'white');

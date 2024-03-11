@@ -8,7 +8,7 @@ const phoneTitle: ContactsTitle = {
 const phone: ContactsRecord = {
   info: ['+375-29-714-94-64'],
   title: phoneTitle,
-  icon: '../../assets/phone.svg',
+  icon: './src/assets/phone.svg',
   getTitle: function (lang: string): string {
     if (lang === 'ru') return this.title.ru;
     return this.title.en;
