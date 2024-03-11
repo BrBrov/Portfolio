@@ -22,11 +22,12 @@ function LanguageToggle({
 
   return (
     <div className='language'>
-      <label className='language__wrapper'>
-        <input className='language__toggle'
+      <label className='language__wrapper' htmlFor='lang'>
+        <input id='lang' className='language__toggle'
           type='checkbox'
           checked={isEn} 
-          onChange={onCheck}/>
+          onChange={onCheck}
+          placeholder='lang'/>
         <span className='language__slider lanquage__slider_en'></span>
       </label>
     </div>
