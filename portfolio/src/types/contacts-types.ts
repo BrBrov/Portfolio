@@ -3,6 +3,7 @@ import GetTitle from './getTitle-type';
 export interface ContactsRecord {
   info: Array<string>;
   title: ContactsTitle;
+  icon: string;
   getTitle: GetTitle;
 }
 

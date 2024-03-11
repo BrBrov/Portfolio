@@ -8,6 +8,7 @@ const addressTitle: ContactsTitle = {
 const address: ContactsRecord = {
   info: ['Belarus, Postavy'],
   title: addressTitle,
+  icon: '../../assets/location.svg',
   getTitle: function (lang: string): string {
     if (lang === 'ru') return this.title.ru;
     return this.title.en;

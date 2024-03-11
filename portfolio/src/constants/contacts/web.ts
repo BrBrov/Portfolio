@@ -8,6 +8,7 @@ const webTitle: ContactsTitle = {
 const web: ContactsRecord = {
   info: ['https://github.com/BrBrov', 'epoc@list.ru'],
   title: webTitle,
+  icon: '../../assets/mail.svg',
   getTitle: function (lang: string): string {
     if (lang === 'ru') return this.title.ru;
     return this.title.en;
