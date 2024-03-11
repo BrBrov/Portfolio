@@ -1,4 +1,4 @@
-import { Certificate, MyCertificates } from '../types/certificates-tupes';
+import { Certificate, MyCertificates } from '../types/certificates-types';
 
 const preSchool: Certificate = {
   name: 'JS/FE Pre-School 2022Q2',

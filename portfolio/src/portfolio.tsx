@@ -8,7 +8,6 @@ import ContextApp from './context/context';
 import context from './context/context-init';
 import Main from './layouts/Main/main';
 
-
 function Portfolio() {
   const [lang, setLang] = useState<string>('en');
 

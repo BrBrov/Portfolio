@@ -1,12 +1,14 @@
 import { ReactElement, useContext } from 'react';
-import myInfo from '../../constants/info';
 import { MyInfo } from '../../types/info-types';
 import photo from '../../assets/Photo.jpg';
 import './self-intro.scss';
 import ContextApp from '../../context/context';
+import { useSelector } from 'react-redux';
+import infoSelector from '../../redux/info/info-selector';
 
 function SelfIntro(): ReactElement {
   const context = useContext(ContextApp);
+  const storeInfo: MyInfo = useSelector(infoSelector);
 
   return (
     <section className='introdution'>
@@ -17,13 +19,13 @@ function SelfIntro(): ReactElement {
       </div>
       <div className='introdution__wrapper'>
         <h1 className='introdution__name'>
-          { myInfo[context.language as keyof MyInfo].name }
+          { storeInfo[context.language as keyof MyInfo].name }
         </h1>
         <span className='introdution__surname'>
-          { myInfo[context.language as keyof MyInfo].surname }
+          { storeInfo[context.language as keyof MyInfo].surname }
         </span>
         <span className='introdution__prof'>
-          { myInfo[context.language as keyof MyInfo].proffessional }
+          { storeInfo[context.language as keyof MyInfo].proffessional }
         </span>
       </div>
     </section>
