@@ -1,7 +1,7 @@
 import { LangSkills, MyLangSkills } from '../types/languges-types';
 
 const russian: LangSkills = {
-  level: '100',
+  level: 100,
   title: function (lang: string): string {
     if (lang === 'ru') return 'Русский';
 
@@ -10,7 +10,7 @@ const russian: LangSkills = {
 };
 
 const belarus: LangSkills = {
-  level: '90',
+  level: 90,
   title: function (lang: string): string {
     if (lang === 'ru') return 'Белорусский';
 
@@ -19,7 +19,7 @@ const belarus: LangSkills = {
 };
 
 const english: LangSkills = {
-  level: '30',
+  level: 30,
   title: function (lang: string): string {
     if (lang === 'ru') return 'Английский';
 

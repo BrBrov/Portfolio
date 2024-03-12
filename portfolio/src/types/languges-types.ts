@@ -1,7 +1,7 @@
 import GetTitle from './getTitle-type';
 
 export interface LangSkills {
-  level: string;
+  level: number;
   title: GetTitle;
 }
 
