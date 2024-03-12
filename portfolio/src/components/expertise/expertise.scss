@@ -1,15 +1,11 @@
-@import '../../styles/all-fonts.scss';
+@import '../../styles/skills-style.scss';
 @import '../../styles/separators.scss';
 
 .expertise {
-  display: flex;
-  box-sizing: border-box;
-  width: 100%;
-  padding-top: 70px;
-  flex-direction: column;
+  @include leftSideWrapper;
 
   &__title {
-    @include titleText('gray');
+    @include titleLeftSide;
   }
 
   &__separator {
@@ -17,11 +13,6 @@
   }
 
   &__wrapper {
-    display: flex;
-    box-sizing: border-box;
-    width: 100%;
-    padding-top: 60px;
-    flex-direction: column;
-    gap: 20px;
+    @include leftSideContainer;
   }
 }

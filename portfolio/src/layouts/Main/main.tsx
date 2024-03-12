@@ -8,7 +8,7 @@ function Main (): ReactElement {
   return (
     <div className='main'>
       <aside className='main__aside'>
-        <div className='main__left-apnel'>
+        <div className='main__left-panel'>
           <Contacts/>
           <ExpertiseElement/>
           <Languages/>
