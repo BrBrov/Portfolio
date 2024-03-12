@@ -1,30 +1,36 @@
 @import '../../../styles/all-fonts.scss';
 @import '../../../styles/colors.scss';
 
-.exp {
+.lang-skill {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  gap: 5px;
 
-  &__name {
+  &__record {
+    display: block;
+    width: 24%;
+  }
+
+  &__title {
     @include contactText;
   }
 
-  &__level {
+  &__skill {
     width: 150px;
     margin-right: 44px;
   }
 
-  &__range {
+  &__level {
     height: 12px;
     border-radius: 0;
   }
 
-  &__range::-webkit-progress-bar {
-    background-color: map-get($colors, 'white');
+  &__level::-webkit-progress-bar {
+    background-color: map-get($colors , 'gray');
   }
 
-  &__range::-webkit-progress-value {
+  &__level::-webkit-progress-value {
     background-color: map-get($colors, 'blue');
   }
 }

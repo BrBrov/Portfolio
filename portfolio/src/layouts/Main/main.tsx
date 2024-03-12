@@ -2,6 +2,7 @@ import { ReactElement } from 'react';
 import './main.scss';
 import Contacts from '../../components/contacts/contacts';
 import ExpertiseElement from '../../components/expertise/expertise';
+import Languages from '../../components/languages/languages';
 
 function Main (): ReactElement {
   return (
@@ -10,6 +11,7 @@ function Main (): ReactElement {
         <div className='main__left-apnel'>
           <Contacts/>
           <ExpertiseElement/>
+          <Languages/>
         </div>
       </aside>
       <section className='main__section'>
