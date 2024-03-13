@@ -27,12 +27,12 @@ const JsExperience: Experience = {
   professional: 'JavaScript/Front-end 2022Q3',
   period: '2022-2023',
   organization: 'RS School',
-  description: 'Adaptive HTML/CSS layout based on figma layouts, ' + 
-               'PSD templates. Writing elements on a page using JS ' + 
-               'to receive data from third-party services (Flickr, ' + 
-               'OpenWeatherMap API), creating interactive elements ' + 
-               '(adaptive carousel, music player, animation using ' + 
-               'the Web Animation API).'
+  description: 'Адаптивная HTML/CSS-верстка на основе макетов ' +
+               'Figma, PSD-шаблонов. Написание элементов на странице ' +
+               'с помощью JS для получения данных от сторонних сервисов ' +
+               '(Flickr, OpenWeatherMap API), создание интерактивных ' +
+               'элементов (адаптивная карусель, музыкальный проигрыватель, ' + 
+               'анимация с использованием Web Animation API).'
 };
 
 const ruExperience: Array<Experience> = [
