@@ -1,0 +1,13 @@
+@import '../../../styles/all-fonts.scss';
+@import '../../../styles/colors.scss';
+
+.certificate {
+  display: flex;
+  flex-direction: row;
+
+  &__link {
+    @include textGeneral('biggest');
+    color: map-get($colors, 'text');
+    text-decoration: underline;
+  }
+}

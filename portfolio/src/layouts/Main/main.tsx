@@ -7,6 +7,7 @@ import { useSelector } from 'react-redux';
 import educationSelector from '../../redux/education/education-selector';
 import experienceSelector from '../../redux/experience/experience-selector';
 import Description from '../../components/description/description';
+import Certificates from '../../components/certificates/certificates';
 
 function Main (): ReactElement {
   const education = useSelector(educationSelector);
@@ -24,6 +25,7 @@ function Main (): ReactElement {
         <div className='main__rigth-panel'>
           <Description {...experience} />
           <Description {...education} />
+          <Certificates/>
         </div>
       </section>
     </div>

@@ -1,0 +1,26 @@
+@import '../../styles/separators.scss';
+@import '../../styles/all-fonts.scss';
+
+.certificates {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 50px;
+  flex-direction: column;
+
+  &__title {
+    @include titleText('black');
+  }
+
+  &__separator {
+    @include separator('black')
+  }
+
+  &__container {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 30px;
+  }
+}
