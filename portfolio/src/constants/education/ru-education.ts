@@ -20,6 +20,6 @@ const RSSchool: Education = {
                'Typescript.'
 };
 
-const ruEducation: Array<Education> = [medUniver, RSSchool];
+const ruEducation: Array<Education> = [RSSchool, medUniver];
 
 export default ruEducation;

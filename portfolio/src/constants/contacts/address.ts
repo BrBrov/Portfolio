@@ -1,7 +1,7 @@
 import { ContactsRecord, ContactsTitle } from '../../types/contacts-types';
 
 const addressTitle: ContactsTitle = {
-  en: 'Addres',
+  en: 'Address',
   ru: 'Адрес'
 };
 

@@ -1,0 +1,42 @@
+@import '../../styles/all-fonts.scss';
+
+.definition {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 7px;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__left {
+    display: flex;
+    box-sizing: border-box;
+    width: 24.66%;
+    padding-top: 3px;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  &__period {
+    @include textGeneral('big');
+  }
+
+  &__organisation {
+    @include textGeneral('medium');
+  }
+
+  &__right {
+    display: flex;
+    width: 60.7%;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__professional {
+    @include textGeneral('biggest');
+  }
+
+  &__description {
+    @include textGeneral('small');
+  }
+}

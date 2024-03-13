@@ -1,11 +1,10 @@
-export interface Education {
-  period: string;
-  organization: string;
-  professional: string;
-  description:string;
-}
+import { GeneralEducation } from './general-education-type';
+import GetTitle from './getTitle-type';
+
+export interface Education extends GeneralEducation {}
 
 export interface MyEducation {
   en: Array<Education>;
   ru: Array<Education>;
+  title: GetTitle;
 }

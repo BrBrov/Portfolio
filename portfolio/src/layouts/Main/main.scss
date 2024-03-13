@@ -35,9 +35,11 @@
 
   &__rigth-panel {
     display: flex;
+    box-sizing: border-box;
     width: 80.43%;
+    padding-top: 60px;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
   }
 }

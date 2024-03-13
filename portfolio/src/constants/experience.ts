@@ -5,7 +5,6 @@ import ruExperience from './experience/ru-experience';
 const experience: MyExperience = {
   en: enExperience,
   ru: ruExperience,
-  organization: 'RS School',
   title: function (lang: string): string {
     if (lang === 'ru') return 'ОПЫТ';
 

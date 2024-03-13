@@ -19,6 +19,6 @@ const RSSchool: Education = {
                'to Angular and React frameworks using Typescript'
 };
 
-const enEducation: Array<Education> = [medUniver, RSSchool];
+const enEducation: Array<Education> = [RSSchool, medUniver];
 
 export default enEducation;

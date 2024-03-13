@@ -14,7 +14,7 @@
 }
 
 
-$font-sizes: (95px, 70px, 25px, 32px, 12px, 22px, 10px, 9px, 8px);
+$font-sizes: (95px, 70px, 25px, 32px, 24px, 22px, 20px, 18px, 16.5px);
 
 @mixin nameFont($name) {
 
@@ -60,18 +60,22 @@ $font-sizes: (95px, 70px, 25px, 32px, 12px, 22px, 10px, 9px, 8px);
 
   @if($size == 'biggest') {
     font-size: nth($font-sizes, 5);
+    font-weight: 800;
   }
 
   @if($size == 'big') {
     font-size: nth($font-sizes, 7);
+    font-weight: 800;
   }
 
   @if($size == 'medium') {
     font-size: nth($font-sizes, 8);
+    font-weight: 800;
   }
 
   @if($size == 'small') {
     font-size: nth($font-sizes, 9);
+    color: map-get($colors, 'text')
   }
 }
 
