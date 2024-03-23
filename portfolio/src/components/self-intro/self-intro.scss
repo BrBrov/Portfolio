@@ -46,12 +46,14 @@
 
     @media screen and (max-width: 1185px) {
       padding-left: 35px;
-    }
 
-    @media screen and (max-width: 810px) {
+      @media screen and (max-width: 810px) {
       align-items: center;
       padding: 0;
     }
+    }
+
+    
   }
 
   &__name {
