@@ -7,6 +7,10 @@
   margin: 40px auto 40px;
   box-shadow: 3px -3px 10px #161415;
   background-color: map-get($colors, 'white');
+
+  @media screen and (max-width: 1413px) {
+    margin: 0;
+  }
 }
 
 a {

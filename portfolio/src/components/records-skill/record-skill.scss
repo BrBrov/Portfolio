@@ -11,13 +11,29 @@
   }
 
   &__level {
-    width: 150px;
+    display: flex;
+    width: 50%;
+    max-width: 150px;
     margin-right: 44px;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media screen and (max-width: 950px) {
+      margin-right: 22px;
+    }
   }
 
   &__range {
     height: 12px;
     border-radius: 0;
+
+    @media screen and (max-width: 950px) {
+      width: 100px;
+    }
+
+    @media screen and (max-width: 675px) {
+      width: 80px;
+    }
   }
 
   &__range::-webkit-progress-bar {

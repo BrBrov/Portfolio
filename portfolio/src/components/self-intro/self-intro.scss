@@ -7,6 +7,12 @@
   min-height: 465px;
   flex-direction: row;
   background-color: map-get($colors, 'title');
+
+  @media screen and (max-width: 810px) {
+    min-height: 715px;
+    flex-direction: column;
+    align-items: center;
+  }
   
   &__img {
     display: flex;
@@ -14,10 +20,15 @@
     height: 465px;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 810px) {
+      width: 100%;
+    }
   }
 
   &__image {
     width: 100%;
+    max-width: 465px;
     height: 100%;
     object-fit: cover;
   }
@@ -32,12 +43,25 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 10px;
+
+    @media screen and (max-width: 1185px) {
+      padding-left: 35px;
+    }
+
+    @media screen and (max-width: 810px) {
+      align-items: center;
+      padding: 0;
+    }
   }
 
   &__name {
     display: inline;
     margin: 120px 0 0 0;
     @include nameFont('name');
+
+    @media screen and (max-width: 810px) {
+      margin-top: 30px;
+    }
   }
 
   &__surname {

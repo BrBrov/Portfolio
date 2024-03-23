@@ -11,6 +11,10 @@
     width: 65px;
     justify-content: flex-start;
     align-items: flex-start;
+
+    @media screen and (max-width: 765px) {
+      width: 35px;
+    }
   }
 
   &__img {

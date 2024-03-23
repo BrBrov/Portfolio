@@ -8,9 +8,7 @@
 
   &__aside{
     display: flex;
-    // box-sizing: border-box;
     width: 35%;
-    // padding: 85px 0 0 80px;
     flex-direction: row;
     justify-content: flex-end;
     background-color: map-get($colors, 'panel');
@@ -23,6 +21,10 @@
     padding-top: 15px;
     flex-direction: column;
     justify-content: flex-start;
+
+    @media screen and (max-width: 1150px) {
+      width: 92%;
+    }
   }
 
   &__section {
@@ -41,5 +43,9 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    @media screen and (max-width: 1150px) {
+      width: 90%;
+    }
   }
 }
