@@ -28,7 +28,7 @@ $font-sizes: (95px, 70px, 25px, 32px, 24px, 22px, 20px, 18px, 16.5px, 14px, 12px
       font-size: nth($font-sizes, 2 );
     }
 
-    @media screen and (max-width: 860px) {
+    @media screen and (max-width: 810px) {
       font-size: nth($font-sizes, 3 );
     }
   }
