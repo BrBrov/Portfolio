@@ -7,7 +7,7 @@
   justify-content: space-between;
 
   @media screen and (max-width: 620px) {
-    width: 320px;
+    max-width: 530px;
 
     @media screen and (max-width: 350px) {
       width: 280px;
@@ -29,8 +29,10 @@
     @media screen and (max-width: 950px) and (min-width: 621px) {
       margin-right: 22px;
     }
+
     @media screen and (max-width: 350px) {
       margin-right: 22px;
+      width: 50%;
     }
   }
 

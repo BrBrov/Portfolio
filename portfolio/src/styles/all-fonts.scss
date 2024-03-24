@@ -212,6 +212,10 @@ $font-sizes: (
 
       @media screen and (max-width: 439px) {
         font-size: nth($font-sizes, 10);
+
+        @media screen and (max-width: 384px) {
+          font-size: nth($font-sizes, 11);
+        }
       }
     }
   }
