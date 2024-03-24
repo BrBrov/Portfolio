@@ -1,12 +1,26 @@
-import { ContactsRecord, ContactsTitle } from '../../types/contacts-types';
+import { 
+  ContactsInfo,
+  ContactsRecord,
+  ContactsTitle
+} from '../../types/contacts-types';
 
 const webTitle: ContactsTitle = {
   en: 'Web',
   ru: 'Web'
 };
 
+const git: ContactsInfo = {
+  data: 'https://github.com/BrBrov',
+  type: 'web'
+};
+
+const mail: ContactsInfo = {
+  data: 'epoc@list.ru',
+  type: 'mail'
+};
+
 const web: ContactsRecord = {
-  info: ['https://github.com/BrBrov', 'epoc@list.ru'],
+  info: [ git, mail],
   title: webTitle,
   icon: './src/assets/mail.svg',
   getTitle: function (lang: string): string {

@@ -3,9 +3,12 @@ import { ContactsRecordProps } from '../../../../types/conatct-record-type';
 import ContextApp from '../../../../context/context';
 import { ContextType } from '../../../../types/context-type';
 import './contact-record.scss';
+import CreateRecordData from './contact-data';
+import { ContactsInfo } from '../../../../types/contacts-types';
 
 function ContactRecord({record}: ContactsRecordProps): ReactElement {
   const context: ContextType = useContext(ContextApp);
+
   return (
     <div className='record'>
       <div className='record__image'>
@@ -14,9 +17,12 @@ function ContactRecord({record}: ContactsRecordProps): ReactElement {
       <div className='record__wrapper'>
         <div className='record__title'>{record.getTitle(context.language)}</div>
         <div className='record__info'>
-          {record.info.map((item: string) => (
-            <div key={item} className='record__data'>{item}</div>
-          ))}
+          {
+            record.info.map((item: ContactsInfo) =>(
+              <CreateRecordData key={item.data}
+                {...{type: item.type, item: item.data}}/>
+            ))
+          }
         </div>
       </div>
     </div>

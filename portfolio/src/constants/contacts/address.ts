@@ -1,12 +1,21 @@
-import { ContactsRecord, ContactsTitle } from '../../types/contacts-types';
+import {
+  ContactsInfo,
+  ContactsRecord,
+  ContactsTitle
+} from '../../types/contacts-types';
 
 const addressTitle: ContactsTitle = {
   en: 'Address',
   ru: 'Адрес'
 };
 
+const addressData: ContactsInfo = {
+  data: 'Belarus, Postavy',
+  type: 'address'
+};
+
 const address: ContactsRecord = {
-  info: ['Belarus, Postavy'],
+  info: [addressData],
   title: addressTitle,
   icon: './src/assets/location.svg',
   getTitle: function (lang: string): string {
