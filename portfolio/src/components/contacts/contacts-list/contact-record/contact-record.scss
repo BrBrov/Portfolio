@@ -6,6 +6,10 @@
   padding-top: 50px;
   justify-content: flex-start;
 
+  @media screen and (max-width: 620px) and (min-width: 400px) {
+    gap: 5%;
+  }
+
   &__image {
     display: flex;
     width: 65px;
