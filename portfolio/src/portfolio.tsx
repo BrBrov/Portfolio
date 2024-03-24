@@ -7,6 +7,7 @@ import setLanguage from './utils/setLanguage';
 import ContextApp from './context/context';
 import context from './context/context-init';
 import Main from './layouts/Main/main';
+import Footer from './layouts/Footer/footer';
 
 function Portfolio() {
   const [lang, setLang] = useState<string>('en');
@@ -33,6 +34,7 @@ function Portfolio() {
       <ContextApp.Provider value={contextInit()}>
         <Header setLangHeader={setLang}/>
         <Main/>
+        <Footer/>
       </ContextApp.Provider>
     </>
   );
