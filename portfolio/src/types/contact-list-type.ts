@@ -1,3 +1,3 @@
 import { MyContacts } from './contacts-types';
 
-export interface ContactsListProps extends MyContacts {}
+export interface ContactsListProps extends Pick<MyContacts, 'contacts'> {}
