@@ -1,0 +1,14 @@
+@import '../../styles/separators.scss';
+@import '../../styles/skills-style.scss';
+
+.contacts {
+  @include leftSideWrapper;
+
+  &__title {
+    @include titleLeftSide;
+  }
+
+  &__separator {
+    @include separator('white');
+  }
+}

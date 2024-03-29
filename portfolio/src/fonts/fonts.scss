@@ -1,13 +1,16 @@
-@use 'fonts-init.scss';
-
-@mixin DMSans {
-  font-family: 'DMSans', serif;
+@font-face {
+  font-family: 'Garet';
+  src: url('Garet-Book.ttf'), format('ttf');
 }
 
-@mixin Now-Bold {
-  font-family: 'Now Bold', sans-serif;
+@font-face {
+  font-family: 'Garet Bold';
+  src: url('Garet-Heavy.ttf'), format('ttf');
 }
 
-@mixin Montserrat {
-  font-family: 'Montserrat Light', sans-serif;
+@font-face {
+  font-family: 'Open Sans';
+  src: url('OpenSans-Regular.ttf'), format('ttf');
 }
+
+$all-fonts: ('Garet', 'Garet Bold', 'Open Sans');

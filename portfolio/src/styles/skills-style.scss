@@ -1,0 +1,22 @@
+@import './all-fonts.scss';
+
+@mixin leftSideWrapper {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 70px;
+  flex-direction: column;
+}
+
+@mixin titleLeftSide {
+  @include titleText('gray');
+}
+
+@mixin leftSideContainer {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 60px;
+  flex-direction: column;
+  gap: 20px;
+}
