@@ -4,11 +4,12 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
     'plugin:react-hooks/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  'parserOptions': {
+  parserOptions: {
     'ecmaVersion': 'latest',
     'sourceType': 'module',
     'warnOnUnsupportedTypeScriptVersion': false,
@@ -17,11 +18,11 @@ module.exports = {
     },
     'createDefaultProgram': true
   },
-  'plugins': [
+  plugins: [
     'react'
   ],
-  'settings': {
-    'react': {
+  settings: {
+    react: {
       'version': 'detect'
     }
   },
@@ -39,6 +40,7 @@ module.exports = {
       'error',
       'always'
     ],
+    'max-len': ["error", { "code": 80 }],
     "@typescript-eslint/semi": "off"
   },
 }

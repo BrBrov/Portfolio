@@ -1,0 +1,18 @@
+@import '../../styles/skills-style.scss';
+@import '../../styles/separators.scss';
+
+.expertise {
+  @include leftSideWrapper;
+
+  &__title {
+    @include titleLeftSide;
+  }
+
+  &__separator {
+    @include separator('white');
+  }
+
+  &__wrapper {
+    @include leftSideContainer;
+  }
+}

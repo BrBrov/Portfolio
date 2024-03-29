@@ -1,0 +1,241 @@
+@import '../fonts/fonts.scss';
+@import './colors.scss';
+
+@mixin garet {
+  font-family: nth($all-fonts, 1), sans-serif;
+}
+
+@mixin garetBold {
+  font-family: nth($all-fonts, 2), sans-serif;
+}
+
+@mixin openSans {
+  font-family: nth($all-fonts, 3), sans-serif;
+}
+
+
+$font-sizes: (
+  95px,
+  70px,
+  25px,
+  32px,
+  24px,
+  22px,
+  20px,
+  18px,
+  16.5px,
+  14px,
+  12px
+);
+
+@mixin nameFont($name) {
+
+  @if($name =='name') {
+    @include garet();
+    font-size: nth($font-sizes, 1);
+    font-weight: 600;
+    color: map-get($colors, 'name');
+    letter-spacing: 17px;
+
+    @media screen and (max-width: 1061px) and (min-width: 621px) {
+      font-size: nth($font-sizes, 2);
+
+      @media screen and (max-width: 810px) {
+        font-size: nth($font-sizes, 3);
+      }
+    }
+
+    @media screen and (max-width: 620px) {
+      font-size: nth($font-sizes, 3);
+      letter-spacing: 17px;
+
+      @media screen and (max-width: 358px) {
+        letter-spacing: 3px;
+      }
+    }
+  }
+
+  @if($name =='surname') {
+    @include garet;
+    font-size: nth($font-sizes, 2);
+    color: map-get($colors, 'name');
+    letter-spacing: 27px;
+
+    @media screen and (max-width: 1061px) and (min-width: 621px) {
+      font-size: nth($font-sizes, 3);
+      letter-spacing: 17px;
+    }
+
+    @media screen and (max-width: 620px) {
+      font-size: nth($font-sizes, 3);
+      letter-spacing: 17px;
+
+      @media screen and (max-width: 358px) {
+        letter-spacing: 3px;
+      }
+    }
+  }
+
+  @if($name =='prof') {
+    @include garet;
+    font-size: nth($font-sizes, 3);
+    color: map-get($colors, 'prof');
+    letter-spacing: 7px;
+
+    @media screen and (max-width: 610px) {
+      font-size: nth($font-sizes, 5);
+      letter-spacing: 5px;
+
+      @media screen and (max-width: 535px) {
+        font-size: nth($font-sizes, 6);
+
+        @media screen and (max-width: 505px) {
+          letter-spacing: 0;
+
+          @media screen and (max-width: 358px) {
+            font-size: nth($font-sizes, 8);
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin titleText ($ligth) {
+  @include garet;
+  font-size: nth($font-sizes, 4);
+  font-weight: 600;
+  color: map-get($colors, $ligth);
+
+  @media screen and (max-width: 755px) and (min-width: 621px) {
+    font-size: nth($font-sizes, 5);
+  }
+}
+
+@mixin contactText {
+  @include openSans;
+  font-size: nth($font-sizes, 6);
+  color: map-get($colors, 'white');
+
+  @media screen and (max-width: 1061px) and (min-width: 621px) {
+    font-size: nth($font-sizes, 7);
+
+    @media screen and (max-width: 995px) {
+      font-size: nth($font-sizes, 9);
+    }
+
+    @media screen and (max-width: 865px) {
+      font-size: nth($font-sizes, 10);
+    }
+
+    @media screen and (max-width: 675px) {
+      font-size: nth($font-sizes, 11);
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    font-size: nth($font-sizes, 8);
+  }
+}
+
+@mixin textGeneral ($size) {
+  @include openSans;
+
+  @if($size =='biggest') {
+    font-size: nth($font-sizes, 5);
+    font-weight: 800;
+
+    @media screen and (max-width: 750px) and (min-width: 621px) {
+      font-size: nth($font-sizes, 6);
+
+      @media screen and (max-width: 675px) {
+        font-size: nth($font-sizes, 7);
+      }
+    }
+
+    @media screen and (max-width: 487px) {
+      font-size: nth($font-sizes, 7);
+
+      @media screen and (max-width: 439px) {
+        font-size: nth($font-sizes, 8);
+
+        @media screen and (max-width: 402px) {
+          font-size: nth($font-sizes, 9);
+
+          @media screen and (max-width: 341px) {
+            font-size: nth($font-sizes, 10);
+          }
+        }
+      }
+    }
+  }
+
+  @if($size =='big') {
+    font-size: nth($font-sizes, 7);
+    font-weight: 800;
+
+    @media screen and (max-width: 750px) and (min-width: 621px) {
+      font-size: nth($font-sizes, 8);
+
+      @media screen and (max-width: 675px) {
+        font-size: nth($font-sizes, 9);
+      }
+    }
+
+    @media screen and (max-width: 487px) {
+      font-size: nth($font-sizes, 8);
+
+      @media screen and (max-width: 439px) {
+        font-size: nth($font-sizes, 9);
+
+        @media screen and (max-width: 402px) {
+          font-size: nth($font-sizes, 10);
+
+          @media screen and (max-width: 341px) {
+            font-size: nth($font-sizes, 11);
+          }
+        }
+      }
+    }
+  }
+
+  @if($size =='medium') {
+    font-size: nth($font-sizes, 8);
+    font-weight: 800;
+
+    @media screen and (max-width: 750px) and (min-width: 621px) {
+      font-size: nth($font-sizes, 9);
+    }
+
+    @media screen and (max-width: 487px) {
+      font-size: nth($font-sizes, 9);
+
+      @media screen and (max-width: 439px) {
+        font-size: nth($font-sizes, 10);
+
+        @media screen and (max-width: 384px) {
+          font-size: nth($font-sizes, 11);
+        }
+      }
+    }
+  }
+
+  @if($size =='small') {
+    font-size: nth($font-sizes, 9);
+    color: map-get($colors, 'text');
+
+    @media screen and (max-width: 750px) and (min-width: 621px) {
+      font-size: nth($font-sizes, 10);
+    }
+
+    @media screen and (max-width: 487px) {
+      font-size: nth($font-sizes, 10);
+    }
+  }
+}
+
+@mixin skillText {
+  @include openSans;
+  font-size: nth($font-sizes, 7);
+  color: map-get($colors, 'white');
+}

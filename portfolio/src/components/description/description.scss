@@ -1,0 +1,27 @@
+@import '../../styles/all-fonts.scss';
+@import '../../styles/separators.scss';
+
+.desciription {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 25px;
+  flex-direction: column;
+
+  &__title {
+    @include titleText('black');
+  }
+
+  &__separator {
+    @include separator('black');
+  }
+
+  &__container {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 40px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}

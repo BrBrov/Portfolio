@@ -1,18 +1,15 @@
+@import './styles/colors.scss';
+
 .portfolio {
   position: relative;
   max-width: 1414px;
-  min-height: 2000px;
+  min-height: 2100px;
   margin: 40px auto 40px;
   box-shadow: 3px -3px 10px #161415;
+  background-color: map-get($colors, 'white');
 
-  @media screen and (max-width: 1414px) {
-    width: 100%;
-    margin: 0 auto;
-    box-shadow: none;
-
-    @media screen and (max-width: 960px) {
-      min-height: 3238px;
-    }
+  @media screen and (max-width: 1413px) {
+    margin: 0;
   }
 }
 

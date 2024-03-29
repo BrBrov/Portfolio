@@ -1,0 +1,59 @@
+@import '../../styles/all-fonts.scss';
+@import '../../styles/colors.scss';
+
+.record-skill {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  @media screen and (max-width: 620px) {
+    max-width: 530px;
+
+    @media screen and (max-width: 350px) {
+      width: 280px;
+    }
+  }
+
+  &__name {
+    @include contactText;
+  }
+
+  &__level {
+    display: flex;
+    width: 50%;
+    max-width: 150px;
+    margin-right: 44px;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media screen and (max-width: 950px) and (min-width: 621px) {
+      margin-right: 22px;
+    }
+
+    @media screen and (max-width: 350px) {
+      margin-right: 22px;
+      width: 50%;
+    }
+  }
+
+  &__range {
+    height: 12px;
+    border-radius: 0;
+
+    @media screen and (max-width: 950px) and (min-width: 621px) {
+      width: 100px;
+
+      @media screen and (max-width: 675px) {
+        width: 80px;
+      }
+    }
+  }
+
+  &__range::-webkit-progress-bar {
+    background-color: map-get($colors, 'white');
+  }
+
+  &__range::-webkit-progress-value {
+    background-color: map-get($colors, 'blue');
+  }
+}

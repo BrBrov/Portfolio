@@ -1,0 +1,50 @@
+@import '../../../../styles/all-fonts.scss';
+
+.record {
+  display: flex;
+  box-sizing: border-box;
+  padding-top: 50px;
+  justify-content: flex-start;
+
+  @media screen and (max-width: 620px) and (min-width: 400px) {
+    gap: 5%;
+  }
+
+  &__image {
+    display: flex;
+    width: 65px;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @media screen and (max-width: 765px) and (min-width: 621px) {
+      width: 35px;
+    }
+  }
+
+  &__img {
+    width: 25px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  &__title {
+    @include contactText;
+    font-weight: 600;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2px;
+  }
+
+  &__data {
+    @include contactText;
+  }
+}
