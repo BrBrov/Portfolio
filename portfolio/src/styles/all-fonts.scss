@@ -5,12 +5,8 @@
   font-family: nth($all-fonts, 1), sans-serif;
 }
 
-@mixin garetBold {
-  font-family: nth($all-fonts, 2), sans-serif;
-}
-
 @mixin openSans {
-  font-family: nth($all-fonts, 3), sans-serif;
+  font-family: nth($all-fonts, 2), sans-serif;
 }
 
 
