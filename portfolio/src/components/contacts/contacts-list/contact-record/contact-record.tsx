@@ -12,7 +12,9 @@ function ContactRecord({record}: ContactsRecordProps): ReactElement {
   return (
     <div className='record'>
       <div className='record__image'>
-        <img className='record__img' src={record.icon} alt='Location'/>
+        <img className='record__img'
+          src={`./${record.icon}`}
+          alt='Location'/>
       </div>
       <div className='record__wrapper'>
         <div className='record__title'>{record.getTitle(context.language)}</div>

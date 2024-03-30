@@ -1,9 +1,9 @@
 import { ReactElement, useContext } from 'react';
-import { MyInfo } from '../../types/info-types';
-import './self-intro.scss';
-import ContextApp from '../../context/context';
 import { useSelector } from 'react-redux';
+import { MyInfo } from '../../types/info-types';
+import ContextApp from '../../context/context';
 import infoSelector from '../../redux/info/info-selector';
+import './self-intro.scss';
 
 function SelfIntro(): ReactElement {
   const context = useContext(ContextApp);
@@ -13,7 +13,7 @@ function SelfIntro(): ReactElement {
     <section className='introdution'>
       <div className='introdution__img'>
         <img className='introdution__image'
-          src={'../../assets/Photo.jpg'}
+          src='./photo.jpg'
           alt='Photo'/>
       </div>
       <div className='introdution__wrapper'>

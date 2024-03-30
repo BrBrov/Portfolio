@@ -1,16 +1,11 @@
 @font-face {
   font-family: 'Garet';
-  src: url('Garet-Book.ttf'), format('ttf');
-}
-
-@font-face {
-  font-family: 'Garet Bold';
-  src: url('Garet-Heavy.ttf'), format('ttf');
+  src: url('fonts/Garet-Book.ttf'), format('ttf');
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('OpenSans-Regular.ttf'), format('ttf');
+  src: url('fonts/OpenSans-Regular.ttf'), format('ttf');
 }
 
-$all-fonts: ('Garet', 'Garet Bold', 'Open Sans');
+$all-fonts: ('Garet', 'Open Sans');

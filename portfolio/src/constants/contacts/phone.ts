@@ -17,7 +17,7 @@ const phoneData: ContactsInfo = {
 const phone: ContactsRecord = {
   info: [phoneData],
   title: phoneTitle,
-  icon: './src/assets/phone.svg',
+  icon: 'phone.svg',
   getTitle: function (lang: string): string {
     if (lang === 'ru') return this.title.ru;
     return this.title.en;
