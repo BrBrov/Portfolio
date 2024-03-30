@@ -17,7 +17,7 @@ const addressData: ContactsInfo = {
 const address: ContactsRecord = {
   info: [addressData],
   title: addressTitle,
-  icon: './src/assets/location.svg',
+  icon: 'location.svg',
   getTitle: function (lang: string): string {
     if (lang === 'ru') return this.title.ru;
     return this.title.en;

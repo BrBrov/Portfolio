@@ -7,5 +7,5 @@ export default defineConfig({
   server: {
     port: 4000
   },
-  publicDir: './src/fonts',
+  publicDir: './src/public'
 });
