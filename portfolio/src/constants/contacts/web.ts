@@ -22,7 +22,7 @@ const mail: ContactsInfo = {
 const web: ContactsRecord = {
   info: [ git, mail],
   title: webTitle,
-  icon: './src/assets/mail.svg',
+  icon: 'mail.svg',
   getTitle: function (lang: string): string {
     if (lang === 'ru') return this.title.ru;
     return this.title.en;
