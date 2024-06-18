@@ -13,7 +13,7 @@ function Main (): ReactElement {
   const education = useSelector(educationSelector);
   const experience = useSelector(experienceSelector);
   return (
-    <div className='main'>
+    <main className='main'>
       <aside className='main__aside'>
         <div className='main__left-panel'>
           <Contacts/>
@@ -28,7 +28,7 @@ function Main (): ReactElement {
           <Certificates/>
         </div>
       </section>
-    </div>
+    </main>
   );
 }
 
