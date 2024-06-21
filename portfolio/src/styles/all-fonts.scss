@@ -37,7 +37,7 @@ $font-sizes: (
       font-size: nth($font-sizes, 2);
 
       @media screen and (max-width: 810px) {
-        font-size: nth($font-sizes, 3);
+        font-size: nth($font-sizes, 2);
       }
     }
 
@@ -57,9 +57,24 @@ $font-sizes: (
     color: map-get($colors, 'name');
     letter-spacing: 27px;
 
-    @media screen and (max-width: 1061px) and (min-width: 621px) {
-      font-size: nth($font-sizes, 3);
-      letter-spacing: 17px;
+    @media screen and (max-width: 1339px) and (min-width: 1062px) {
+      font-size: nth($font-sizes, 2);
+      letter-spacing: 12px;
+    }
+
+    @media screen and (max-width: 1061px) and (min-width: 921px) {
+      font-size: nth($font-sizes, 2);
+      letter-spacing: 10px;
+    }
+
+    @media screen and (max-width: 920px) and (min-width: 811px) {
+      font-size: nth($font-sizes, 2);
+      letter-spacing: 2px;
+    }
+
+    @media screen and (max-width: 810px) and (min-width: 621px) {
+      font-size: nth($font-sizes, 2);
+      letter-spacing: 2px;
     }
 
     @media screen and (max-width: 620px) {
