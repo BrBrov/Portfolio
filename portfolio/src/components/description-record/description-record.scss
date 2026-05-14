@@ -1,4 +1,4 @@
-@import '../../styles/all-fonts.scss';
+@use '../../styles/all-fonts.scss';
 
 .definition {
   display: flex;
@@ -18,11 +18,11 @@
   }
 
   &__period {
-    @include textGeneral('big');
+    @include all-fonts.textGeneral('big');
   }
 
   &__organisation {
-    @include textGeneral('medium');
+    @include all-fonts.textGeneral('medium');
   }
 
   &__right {
@@ -33,10 +33,10 @@
   }
 
   &__professional {
-    @include textGeneral('biggest');
+    @include all-fonts.textGeneral('biggest');
   }
 
   &__description {
-    @include textGeneral('small');
+    @include all-fonts.textGeneral('small');
   }
 }

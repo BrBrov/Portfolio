@@ -1,5 +1,6 @@
-@import '../../styles/all-fonts.scss';
-@import '../../styles/colors.scss';
+@use "sass:map";
+@use '../../styles/all-fonts.scss';
+@use '../../styles/colors.scss';
 
 .record-skill {
   display: flex;
@@ -15,7 +16,7 @@
   }
 
   &__name {
-    @include contactText;
+    @include all-fonts.contactText;
   }
 
   &__level {
@@ -50,10 +51,10 @@
   }
 
   &__range::-webkit-progress-bar {
-    background-color: map-get($colors, 'white');
+    background-color: map.get(colors.$colors, 'white');
   }
 
   &__range::-webkit-progress-value {
-    background-color: map-get($colors, 'blue');
+    background-color: map.get(colors.$colors, 'blue');
   }
 }

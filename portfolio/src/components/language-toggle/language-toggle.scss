@@ -1,6 +1,7 @@
-@import '../../styles/colors.scss';
+@use "sass:map";
+@use '../../styles/colors.scss';
 
-$background: map-get($colors, 'prof');
+$background: map.get(colors.$colors, 'prof');
 
 .language {
   position: relative;
@@ -10,7 +11,7 @@ $background: map-get($colors, 'prof');
   height: 40px;
   padding: 2px;
   justify-content: flex-end;
-  background-color: map-get($colors, 'title' );
+  background-color: map.get(colors.$colors, 'title' );
 
   &__wrapper {
     position: relative;

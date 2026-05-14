@@ -1,4 +1,4 @@
-@import './all-fonts.scss';
+@use 'all-fonts.scss';
 
 @mixin leftSideWrapper {
   display: flex;
@@ -9,7 +9,7 @@
 }
 
 @mixin titleLeftSide {
-  @include titleText('gray');
+  @include all-fonts.titleText('gray');
 }
 
 @mixin leftSideContainer {

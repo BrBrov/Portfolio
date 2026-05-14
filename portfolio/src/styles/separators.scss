@@ -1,4 +1,5 @@
-@import './colors.scss';
+@use "sass:map";
+@use 'colors.scss';
 
 @mixin separator($type) {
   display: block;
@@ -6,10 +7,10 @@
   height: 5px;
   margin-top: 19px;
   @if ($type == 'black') {
-    background-color: map-get($colors, 'panel');
+    background-color: map.get(colors.$colors, 'panel');
   }
 
   @if ($type == 'white') {
-    background-color: map-get($colors, 'gray');
+    background-color: map.get(colors.$colors, 'gray');
   }
 }

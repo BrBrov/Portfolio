@@ -1,5 +1,5 @@
-@import '../../styles/separators.scss';
-@import '../../styles/all-fonts.scss';
+@use '../../styles/separators.scss';
+@use '../../styles/all-fonts.scss';
 
 .certificates {
   display: flex;
@@ -9,11 +9,11 @@
   flex-direction: column;
 
   &__title {
-    @include titleText('black');
+    @include all-fonts.titleText('black');
   }
 
   &__separator {
-    @include separator('black')
+    @include separators.separator('black')
   }
 
   &__container {

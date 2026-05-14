@@ -1,4 +1,4 @@
-@import '../../../../styles/all-fonts.scss';
+@use '../../../../styles/all-fonts.scss';
 
 .record {
   display: flex;
@@ -33,7 +33,7 @@
   }
 
   &__title {
-    @include contactText;
+    @include all-fonts.contactText;
     font-weight: 600;
   }
 
@@ -45,6 +45,6 @@
   }
 
   &__data {
-    @include contactText;
+    @include all-fonts.contactText;
   }
 }

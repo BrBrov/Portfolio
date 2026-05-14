@@ -1,8 +1,9 @@
-@import './styles/colors.scss';
+@use "sass:map";
+@use 'styles/colors.scss';
 
 html,
 body {
   margin: 0;
   padding: 0;
-  background: map-get($colors, 'background');
+  background: map.get(colors.$colors, 'background');
 }

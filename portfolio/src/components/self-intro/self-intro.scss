@@ -1,12 +1,13 @@
-@import '../../styles/all-fonts.scss';
-@import '../../styles/colors.scss';
+@use "sass:map";
+@use '../../styles/all-fonts.scss';
+@use '../../styles/colors.scss';
 
 .introdution {
   display: flex;
   width: 100%;
   min-height: 465px;
   flex-direction: row;
-  background-color: map-get($colors, 'title');
+  background-color: map.get(colors.$colors, 'title');
 
   @media screen and (max-width: 810px) {
     min-height: 715px;
@@ -60,7 +61,7 @@
   &__name {
     display: inline;
     margin: 120px 0 0 0;
-    @include nameFont('name');
+    @include all-fonts.nameFont('name');
 
     @media screen and (max-width: 810px) {
       margin-top: 30px;
@@ -68,10 +69,10 @@
   }
 
   &__surname {
-    @include nameFont('surname');
+    @include all-fonts.nameFont('surname');
   }
 
   &__prof {
-    @include nameFont('prof');
+    @include all-fonts.nameFont('prof');
   }
 }
