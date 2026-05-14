@@ -10,7 +10,7 @@ const addressTitle: ContactsTitle = {
 };
 
 const addressData: ContactsInfo = {
-  data: 'Belarus, Postavy',
+  data: 'Belarus, Minsk',
   type: 'address'
 };
 
