@@ -1,7 +1,7 @@
 import { Analytics } from '@vercel/analytics/react';
 import './portfolio.scss';
 import Header from './layouts/Header/header';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import checkLanguage from './utils/checkLanguage';
 import setLanguage from './utils/setLanguage';
 import ContextApp from './context/context';
@@ -10,31 +10,21 @@ import Main from './layouts/Main/main';
 import Footer from './layouts/Footer/footer';
 
 function Portfolio() {
-  const [lang, setLang] = useState<string>('en');
+  const [lang, setLang] = useState<string>(() => checkLanguage() ?? 'en');
 
-  function contextInit() {
-    context.language = lang;
-    return context;
-  }
+  const providerValue = useMemo(() => ({ ...context, language: lang }), [lang]);
 
   useEffect(() => {
-    const langFromStore: string | null = checkLanguage();
-
-    if(!langFromStore) {
-      setLanguage('en');
-    }
-
-    if(langFromStore && langFromStore !== lang) {
-      setLang(langFromStore);
-    }
+    setLanguage(lang);
   }, [lang]);
+
   return (
     <>
-      <Analytics debug = { false }/>
-      <ContextApp.Provider value={contextInit()}>
-        <Header setLangHeader={setLang}/>
-        <Main/>
-        <Footer/>
+      <Analytics debug={false} />
+      <ContextApp.Provider value={providerValue}>
+        <Header setLangHeader={setLang} />
+        <Main />
+        <Footer />
       </ContextApp.Provider>
     </>
   );
